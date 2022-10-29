@@ -59,4 +59,28 @@
     
   </entry>
   
+  <entry>
+    <title>range()函数</title>
+    <link href="https://zeerre.github.io/pctl/2021/06/27/range%E5%87%BD%E6%95%B0/"/>
+    <id>https://zeerre.github.io/pctl/2021/06/27/range%E5%87%BD%E6%95%B0/</id>
+    <published>2021-06-27T07:07:38.000Z</published>
+    <updated>2022-10-29T04:02:40.290Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for i in range(1,10,11):</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure><p>以上代码的输出是什么呢？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Python" scheme="https://zeerre.github.io/pctl/categories/Python/"/>
+    
+    
+    <category term="range()" scheme="https://zeerre.github.io/pctl/tags/range/"/>
+    
+  </entry>
+  
 </feed>

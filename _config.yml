@@ -105,5 +105,5 @@ theme: next1
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@zeerre.github.com:zeerre/zeerre.github.io.git,master
+  repository: git@zeerre.github.com:zeerre/zeerre.github.io.git
   branch: master

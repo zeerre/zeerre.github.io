@@ -342,12 +342,15 @@
 <p>使用代替配置文件</p>
 <p>可以在 hexo-cli 中使用 –config 参数来指定自定义配置文件的路径。你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p>
 <p>#用 ‘custom.yml’ 代替 ‘_config.yml’</p>
-<p>  $ hexo server –config custom.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server --config custom.yml</span><br></pre></td></tr></table></figure>
+
 <p>#使用 ‘custom.yml’ 和 ‘custom2.json’，优先使用 ‘custom3.yml’，然后是 ‘custom2.json’</p>
-<p>  $ hexo generate –config custom.yml,custom2.json,custom3.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+
 <p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 _multiconfig.yml。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
 <p>例如，使用 –options 指定了两个自定义配置文件：</p>
-<p>  $ hexo generate –config custom.yml,custom2.json</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate --config custom.yml,custom2.json</span><br></pre></td></tr></table></figure>
+
 <p>如果 custom.yml 中指定了 foo: bar，在 custom2.json 中指定了 “foo”: “dinosaur”，那么在 _multiconfig.yml 中你会得到 foo: dinosaur。</p>
 <p>使用代替主题配置文件</p>
 <p>通常情况下，Hexo 主题是一个独立的项目，并拥有一个独立的 _config.yml 配置文件。</p>

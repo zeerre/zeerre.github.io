@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"zeerre.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="网站   参数 描述    title 网站标题   subtitle 网站副标题   description 网站描述   keywords 网站的关键词。支持多个关键词。   author 您的名字   language 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。   timezone 网站">
+  <meta name="description" content="建站安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。 123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install  新建完成后，指定文件夹的目录如下： 12345678.├── _config.yml├── package.json├── scaffolds├── source|   ├── _d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo配置参数">
 <meta property="og:url" content="https://zeerre.github.io/2023/06/01/Hexo%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0/index.html">
 <meta property="og:site_name" content="GeekBear">
-<meta property="og:description" content="网站   参数 描述    title 网站标题   subtitle 网站副标题   description 网站描述   keywords 网站的关键词。支持多个关键词。   author 您的名字   language 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。   timezone 网站">
+<meta property="og:description" content="建站安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。 123$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install  新建完成后，指定文件夹的目录如下： 12345678.├── _config.yml├── package.json├── scaffolds├── source|   ├── _d">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-06-01T13:45:41.000Z">
-<meta property="article:modified_time" content="2023-06-02T05:49:33.560Z">
+<meta property="article:modified_time" content="2023-06-02T06:29:10.311Z">
 <meta property="article:author" content="RRE. GeekBear">
 <meta property="article:tag" content="Hexo, Nodejs, Git">
 <meta name="twitter:card" content="summary">
@@ -213,7 +213,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-02 13:49:33" itemprop="dateModified" datetime="2023-06-02T13:49:33+08:00">2023-06-02</time>
+                <time title="修改时间：2023-06-02 14:29:10" itemprop="dateModified" datetime="2023-06-02T14:29:10+08:00">2023-06-02</time>
               </span>
 
           
@@ -227,7 +227,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
+        <h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+
+<p>新建完成后，指定文件夹的目录如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<p><strong>_config.yml</strong> </p>
+<p>网站的 <strong>配置</strong> 信息，您可以在此配置大部分的参数。</p>
+<p><strong>package.json</strong></p>
+<p>应用程序的信息。EJS, Stylus 和 Markdown renderer 已默认安装，您可以自由移除。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">package.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;hexo-site&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;0.0.0&quot;,</span><br><span class="line">  &quot;private&quot;: true,</span><br><span class="line">  &quot;hexo&quot;: &#123;</span><br><span class="line">    &quot;version&quot;: &quot;&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;dependencies&quot;: &#123;</span><br><span class="line">    &quot;hexo&quot;: &quot;^3.8.0&quot;,</span><br><span class="line">    &quot;hexo-generator-archive&quot;: &quot;^0.1.5&quot;,</span><br><span class="line">    &quot;hexo-generator-category&quot;: &quot;^0.1.3&quot;,</span><br><span class="line">    &quot;hexo-generator-index&quot;: &quot;^0.2.1&quot;,</span><br><span class="line">    &quot;hexo-generator-tag&quot;: &quot;^0.2.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-ejs&quot;: &quot;^0.3.1&quot;,</span><br><span class="line">    &quot;hexo-renderer-stylus&quot;: &quot;^0.3.3&quot;,</span><br><span class="line">    &quot;hexo-renderer-marked&quot;: &quot;^0.3.2&quot;,</span><br><span class="line">    &quot;hexo-server&quot;: &quot;^0.3.3&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>scaffolds</strong></p>
+<p>模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。</p>
+<p>Hexo的模板是指在新建的文章文件中默认填充的内容。例如，如果您修改scaffold&#x2F;post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p>
+<p><strong>source</strong></p>
+<p>资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</p>
+<p><strong>themes</strong></p>
+<p>主题 文件夹。Hexo 会根据主题来生成静态页面。</p>
+<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
 <thead>
 <tr>
 <th>参数</th>
@@ -586,15 +605,211 @@
 <p>最终主题配置的输出是：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>独立的 _config.[theme].yml 文件</p>
+<p>独立的 <strong>_config.[theme].yml</strong> 文件</p>
 <p>该特性自 Hexo 5.0.0 起提供</p>
-<p>独立的主题配置文件应放置于站点根目录下，支持 yml 或 json 格式。需要配置站点 _config.yml 文件中的 theme 以供 Hexo 寻找 _config.[theme].yml 文件。</p>
+<p>独立的主题配置文件应放置于站点根目录下，支持 yml 或 json 格式。需要配置站点 <strong>_config.yml</strong> 文件中的 theme 以供 Hexo 寻找 <strong>_config.[theme].yml</strong> 文件。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#_config.yml</span><br><span class="line">theme: &quot;my-theme&quot;</span><br><span class="line">#_config.my-theme.yml</span><br><span class="line">bio: &quot;My awesome bio&quot;</span><br><span class="line">foo:</span><br><span class="line">  bar: &#x27;a&#x27;</span><br><span class="line">#themes/my-theme/_config.yml</span><br><span class="line">bio: &quot;Some generic bio&quot;</span><br><span class="line">logo: &quot;a-cool-image.png&quot;</span><br><span class="line">  foo:</span><br><span class="line">    baz: &#x27;b&#x27;</span><br></pre></td></tr></table></figure>
 
 <p>最终主题配置的输出是：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>我们强烈建议你将所有的主题配置集中在一处。如果你不得不在多处配置你的主题，那么这些信息对你将会非常有用：Hexo 在合并主题配置时，Hexo 配置文件中的 theme_config 的优先级最高，其次是 _config.[theme].yml 文件，最后是位于主题目录下的 _config.yml 文件。</p>
+<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><p><strong>init</strong></p>
+<p><code>$ hexo init [folder]</code></p>
+<p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
+<p>本命令相当于执行了以下几步：</p>
+<p>Git clone hexo-starter 和 hexo-theme-landscape 主题到当前目录或指定目录。</p>
+<p>使用 Yarn 1、pnpm 或 npm 包管理器下载依赖（如有已安装多个，则列在前面的优先）。npm 默认随 Node.js 安装。</p>
+<p><strong>new</strong></p>
+<p><code>$ hexo new [layout] &lt;title&gt;</code></p>
+<p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+<p><code>$ hexo new &quot;post title with whitespace&quot;</code></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p, –path</td>
+<td>自定义新文章的路径</td>
+</tr>
+<tr>
+<td>-r, –replace</td>
+<td>如果存在同名文章，将其替换</td>
+</tr>
+<tr>
+<td>-s, –slug</td>
+<td>文章的 Slug，作为新文章的文件名和发布后的 URL</td>
+</tr>
+</tbody></table>
+<p>默认情况下，Hexo 会使用文章的标题来决定文章文件的路径。对于独立页面来说，Hexo 会创建一个以标题为名字的目录，并在目录中放置一个 index.md 文件。你可以使用 –path 参数来覆盖上述行为、自行决定文件的目录：</p>
+<p><code>hexo new page --path about/me &quot;About me&quot;</code></p>
+<p>以上命令会创建一个 source&#x2F;about&#x2F;me.md 文件，同时 Front Matter 中的 title 为 “About me”</p>
+<p>注意！title 是必须指定的！如果你这么做并不能达到你的目的：</p>
+<p><code>hexo new page --path about/me</code></p>
+<p>此时 Hexo 会创建 source&#x2F;_posts&#x2F;about&#x2F;me.md，同时 me.md 的 Front Matter 中的 title 为 “page”。这是因为在上述命令中，hexo-cli 将 page 视为指定文章的标题、并采用默认的 layout。</p>
+<p><strong>generate</strong></p>
+<p><code>$ hexo generate</code></p>
+<p>生成静态文件。</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-d, –deploy</td>
+<td>文件生成后立即部署网站</td>
+</tr>
+<tr>
+<td>-w, –watch</td>
+<td>监视文件变动</td>
+</tr>
+<tr>
+<td>-b, –bail</td>
+<td>生成过程中如果发生任何未处理的异常则抛出异常</td>
+</tr>
+<tr>
+<td>-f, –force</td>
+<td>强制重新生成文件</td>
+</tr>
+<tr>
+<td>-c, –concurrency</td>
+<td>最大同时生成文件的数量，默认无限制</td>
+</tr>
+</tbody></table>
+<p>Hexo 引入了差分机制，如果 public 目录存在，那么 hexo g 只会重新生成改动的文件。</p>
+<p>使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></p>
+<p><strong>-c, –concurrency</strong>	最大同时生成文件的数量，默认无限制<br>该命令可以简写为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">publish</span><br><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>发表草稿。</p>
+<p><strong>server</strong></p>
+<p><code>$ hexo server</code></p>
+<p>启动服务器。默认情况下，访问网址为： <a target="_blank" rel="noopener" href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a></p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p, –port</td>
+<td>重设端口</td>
+</tr>
+<tr>
+<td>-s, –static</td>
+<td>只使用静态文件</td>
+</tr>
+<tr>
+<td>-l, –log</td>
+<td>启动日记记录，使用覆盖记录格式</td>
+</tr>
+</tbody></table>
+<p><strong>deploy</strong></p>
+<p><code>$ hexo deploy</code></p>
+<p>部署网站。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-g, –generate</td>
+<td>部署之前预先生成静态文件</td>
+</tr>
+</tbody></table>
+<p>该命令可以简写为：</p>
+<p><code>$ hexo d</code></p>
+<p><strong>render</strong></p>
+<p><code>$ hexo render &lt;file1&gt; [file2] ...</code></p>
+<p>渲染文件。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-o, –output</td>
+<td>设置输出路径</td>
+</tr>
+</tbody></table>
+<p><strong>migrate</strong></p>
+<p><code>$ hexo migrate &lt;type&gt;</code></p>
+<p>从其他博客系统 迁移内容。</p>
+<p><strong>clean</strong></p>
+<p><code>$ hexo clean</code></p>
+<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p>
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<p><strong>list</strong></p>
+<p><code>$ hexo list &lt;type&gt;</code></p>
+<p>列出网站资料。</p>
+<p><strong>version</strong></p>
+<p><code>$ hexo version</code></p>
+<p>显示 Hexo 版本。</p>
+<h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><p><code>$ hexo --safe</code></p>
+<p>在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p>
+<h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><p><code>$ hexo --debug</code></p>
+<p>在终端中显示调试信息并记录到 debug.log。当您碰到问题时，可以尝试用调试模式重新执行一次，并 提交调试信息到 GitHub。</p>
+<h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><p><code>$ hexo --silent</code></p>
+<p>隐藏终端信息。</p>
+<p>自定义配置文件的路径</p>
+<p><strong>#使用 custom.yml 代替默认的 _config.yml</strong></p>
+<p><code>$ hexo server --config custom.yml</code></p>
+<p><strong>#使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</strong></p>
+<p><code>$ hexo generate --config custom.yml,custom2.json,custom3.yml</code></p>
+<p>自定义配置文件的路径，指定这个参数后将不再使用默认的 _config.yml。</p>
+<p>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p>
+<p><strong>#使用 custom.yml 代替默认的 _config.yml</strong></p>
+<p><code>$ hexo server --config custom.yml</code></p>
+<p><strong>#使用 custom.yml, custom2.json 和 custom3.yml，其中 custom3.yml 优先级最高，其次是 custom2.json</strong></p>
+<p><code>$ hexo generate --config custom.yml,custom2.json,custom3.yml</code></p>
+<p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 _multiconfig.yml。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
+<h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><p><code>$ hexo --draft</code></p>
+<p>显示 source&#x2F;_drafts 文件夹中的草稿文章。</p>
+<h3 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h3><p><code>$ hexo --cwd /path/to/cwd</code></p>
+<p>自定义当前工作目录（Current working directory）的路径。</p>
+<h2 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h2><h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><p>首先，安装 hexo-migrator-rss 插件。</p>
+<p><code>$ npm install hexo-migrator-rss --save</code></p>
+<p>插件安装完成后，执行下列命令，从 RSS 迁移所有文章。source 可以是文件路径或网址。</p>
+<p><code>$ hexo migrate rss &lt;source&gt;</code></p>
+<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>把 _posts 文件夹内的所有文件复制到 source&#x2F;_posts 文件夹，并在 _config.yml 中修改 new_post_name 参数。</p>
+<p><strong>new_post_name: :year-:month-:day-:title.md</strong></p>
+<h3 id="Octopress"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</h3><p>把 Octopress source&#x2F;_posts 文件夹内的所有文件转移到 Hexo 的 source&#x2F;_posts 文件夹，并修改 _config.yml 中的 new_post_name 参数。</p>
+<p><strong>new_post_name: :year-:month-:day-:title.md</strong></p>
+<h3 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h3><p>首先，安装 hexo-migrator-wordpress 插件。</p>
+<p><code>$ npm install hexo-migrator-wordpress --save</code></p>
+<p>在 WordPress 仪表盘中导出数据(“Tools” → “Export” → “WordPress”)（详情参考WP支持页面）。</p>
+<p>插件安装完成后，执行下列命令来迁移所有文章。source 可以是 WordPress 导出的文件路径或网址。</p>
+<p><code>$ hexo migrate wordpress &lt;source&gt;</code></p>
+<p><strong>注意</strong></p>
+<p>这个插件并不能完美地实现WordPress-&gt;Hexo的数据转换，尤其是在处理WordPress的分类方面存在问题（见Front-matter中的分类与标签）。因此，建议您在迁移完成后，手工审阅所有生成的markdown文件，检查其中是否有错误。对于文章数量较大的WordPress站点，这项工作可能要花很长的时间。</p>
+<h3 id="Joomla"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</h3><p>首先，安装 hexo-migrator-joomla 插件。</p>
+<p><code>$ npm install hexo-migrator-joomla --save</code></p>
+<p>使用 J2XML 组件导出 Joomla 文章。</p>
+<p>插件安装完成后，执行下列命令来迁移所有文章。source 可以是 Joomla 导出的文件路径或网址。</p>
+<p><code>$ hexo migrate joomla &lt;source&gt;</code></p>
+<p>写作</p>
+<p>你可以执行下列命令来创建一篇新文章或者新的页面。</p>
+<p>$ hexo new [layout] <title><br>您可以在命令中指定文章的布局（layout），默认为 post，可以通过修改 _config.yml 中的 default_layout 参数来指定默认布局。</p>
+<p>布局（Layout）<br>Hexo 有三种默认布局：post、page 和 draft。在创建这三种不同类型的文件时，它们将会被保存到不同的路径；而您自定义的其他布局和 post 相同，都将储存到 source&#x2F;_posts 文件夹。</p>
+<p>布局	路径<br>post	source&#x2F;_posts<br>page	source<br>draft	source&#x2F;_drafts<br>禁用布局<br>如果你不希望一篇文章（post&#x2F;page）使用主题处理，请在它的 front-matter 中设置 layout: false。详情请参考本节。</p>
+<p>文件名称<br>Hexo 默认以标题做为文件名称，但您可编辑 new_post_name 参数来改变默认的文件名称，举例来说，设为 :year-:month-:day-:title.md 可让您更方便的通过日期来管理文章。</p>
+<p>变量	描述<br>:title	标题（小写，空格将会被替换为短杠）<br>:year	建立的年份，比如， 2015<br>:month	建立的月份（有前导零），比如， 04<br>:i_month	建立的月份（无前导零），比如， 4<br>:day	建立的日期（有前导零），比如， 07<br>:i_day	建立的日期（无前导零），比如， 7<br>草稿<br>刚刚提到了 Hexo 的一种特殊布局：draft，这种布局在建立时会被保存到 source&#x2F;_drafts 文件夹，您可通过 publish 命令将草稿移动到 source&#x2F;_posts 文件夹，该命令的使用方式与 new 十分类似，您也可在命令中指定 layout 来指定布局。</p>
+<p>$ hexo publish [layout] <title><br>草稿默认不会显示在页面中，您可在执行时加上 –draft 参数，或是把 render_drafts 参数设为 true 来预览草稿。</p>
+<p>模版（Scaffold）<br>在新建文章时，Hexo 会根据 scaffolds 文件夹内相对应的文件来建立文件，例如：</p>
+<p>$ hexo new photo “My Gallery”<br>在执行这行指令时，Hexo 会尝试在 scaffolds 文件夹中寻找 photo.md，并根据其内容建立文章，以下是您可以在模版中使用的变量：</p>
+<p>变量	描述<br>layout	布局<br>title	标题<br>date	文件建立日期<br>支持的格式<br>Hexo 支持以任何格式书写文章，只要安装了相应的渲染插件。</p>
+<p>例如，Hexo 默认安装了 hexo-renderer-marked 和 hexo-renderer-ejs，因此你不仅可以用 Markdown 写作，你还可以用 EJS 写作。如果你安装了 hexo-renderer-pug，你甚至可以用 Pug 模板语言书写文章。</p>
+<p>只需要将文章的扩展名从 md 改成 ejs，Hexo 就会使用 hexo-renderer-ejs 渲染这个文件，其他格式同理。</p>
 
     </div>
 
@@ -672,7 +887,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%AB%99"><span class="nav-number">1.</span> <span class="nav-text">网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E5%9D%80"><span class="nav-number">2.</span> <span class="nav-text">网址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-number">3.</span> <span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">提示</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0"><span class="nav-number">4.</span> <span class="nav-text">文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E9%A1%B5"><span class="nav-number">4.1.</span> <span class="nav-text">分页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%A9%E5%B1%95"><span class="nav-number">4.2.</span> <span class="nav-text">扩展</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E7%AB%99"><span class="nav-number">1.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%AB%99"><span class="nav-number">2.</span> <span class="nav-text">网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E5%9D%80"><span class="nav-number">3.</span> <span class="nav-text">网址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-number">4.</span> <span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA"><span class="nav-number">4.0.0.1.</span> <span class="nav-text">提示</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0"><span class="nav-number">5.</span> <span class="nav-text">文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E9%A1%B5"><span class="nav-number">5.1.</span> <span class="nav-text">分页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%A9%E5%B1%95"><span class="nav-number">5.2.</span> <span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E4%BB%A4"><span class="nav-number">5.3.</span> <span class="nav-text">指令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E9%A1%B9"><span class="nav-number">6.</span> <span class="nav-text">选项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F"><span class="nav-number">6.1.</span> <span class="nav-text">安全模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F"><span class="nav-number">6.2.</span> <span class="nav-text">调试模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E6%B4%81%E6%A8%A1%E5%BC%8F"><span class="nav-number">6.3.</span> <span class="nav-text">简洁模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E8%8D%89%E7%A8%BF"><span class="nav-number">6.4.</span> <span class="nav-text">显示草稿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89-CWD"><span class="nav-number">6.5.</span> <span class="nav-text">自定义 CWD</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%81%E7%A7%BB"><span class="nav-number">7.</span> <span class="nav-text">迁移</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RSS"><span class="nav-number">7.1.</span> <span class="nav-text">RSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jekyll"><span class="nav-number">7.2.</span> <span class="nav-text">Jekyll</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Octopress"><span class="nav-number">7.3.</span> <span class="nav-text">Octopress</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WordPress"><span class="nav-number">7.4.</span> <span class="nav-text">WordPress</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Joomla"><span class="nav-number">7.5.</span> <span class="nav-text">Joomla</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

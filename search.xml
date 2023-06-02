@@ -21,7 +21,9 @@
   <entry>
     <title>Hexo配置参数</title>
     <url>/2023/06/01/Hexo%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0/</url>
-    <content><![CDATA[<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+    <content><![CDATA[<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><span id="more"></span>
+
+<p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 
 <p>新建完成后，指定文件夹的目录如下：</p>

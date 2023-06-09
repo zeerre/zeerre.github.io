@@ -1,5 +1,10 @@
 ---
 title: Hello World
+date: 2023-06-01 21:45:41
+categories:
+  - Hexo
+tags:
+  - Hexo
 ---
 
 

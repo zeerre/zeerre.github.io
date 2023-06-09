@@ -23,6 +23,7 @@ post:
   edited: 更新于
   created: 创建时间
   modified: 修改时间
+  copy_success: 复制成功  #
   edit: 编辑
   in: 分类于
   read_more: 阅读全文
@@ -31,6 +32,7 @@ post:
   views: 阅读次数
   related_posts: 相关文章
   copyright:
+    title: 本文标题    #
     author: 本文作者
     link: 本文链接
     license_title: 版权声明

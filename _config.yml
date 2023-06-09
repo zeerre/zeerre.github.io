@@ -101,6 +101,47 @@ ignore:
 #theme: landscape
 theme: next1
 
+##实现文章字数统计和预计阅读时间
+symbols_count_time:
+    symbols: true
+    time: true
+    total_symbols: true
+    total_time: true
+
+##网站搜索功能
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# hexo-neat
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+
+# 压缩css 跳过min.css
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+
+# 压缩js 跳过min.js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'  
+    - '**/love.js'
+# 压缩博文配置结束
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:

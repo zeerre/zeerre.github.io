@@ -1,7 +1,10 @@
 ---
 title: Hexo配置参数
 date: 2023-06-01 21:45:41
+categories:
+  - Hexo
 tags:
+  - Hexo
 ---
 
 ## 建站

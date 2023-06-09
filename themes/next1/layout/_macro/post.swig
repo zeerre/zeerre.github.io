@@ -206,6 +206,11 @@
         {{ post.content }}
       {%- endif %}
     </div>
+    <div>
+      {% if not is_index %}
+      {% include 'page-end-tag.swig' %}
+      {% endif %}
+    </div>
 
     {#####################}
     {### END POST BODY ###}
@@ -253,6 +258,7 @@
         <div class="post-eof"></div>
       </footer>
     {%- endif %}
+
   </article>
   {######################}
   {### END POST BLOCK ###}

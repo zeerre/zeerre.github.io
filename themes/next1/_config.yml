@@ -179,16 +179,16 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/yourname || github
-  E-Mail: mailto:yourname@gmail.com || envelope
-  Weibo: https://weibo.com/yourname || weibo
-  Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/yourname || twitter
-  FB Page: https://www.facebook.com/yourname || facebook
-  StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  YouTube: https://youtube.com/yourname || youtube
-  Instagram: https://instagram.com/yourname || instagram
-  Skype: skype:yourname?call|chat || skype
+  GitHub: https://github.com/zeerre || github
+  E-Mail: mailto:zeerre98988@gmail.com || envelope
+  #Weibo: https://weibo.com/u/2808365560 || weibo
+  #Google: https://myaccount.google.com/ || google
+  Twitter: https://twitter.com/ZeeHander || twitter
+  FB Page: https://www.facebook.com/zeerre98 || facebook
+  StackOverflow: https://stackoverflow.com/users/22000825/r-r-e-zee || stack-overflow
+  #YouTube: https://www.youtube.com/channel/UC5y1bRFJcbEpA6QhoO53CJQ || youtube
+  Instagram: https://www.instagram.com/zeerre98998/ || instagram
+  #Skype: skype:yourname?call|chat || skype
 
 social_icons:
   enable: true

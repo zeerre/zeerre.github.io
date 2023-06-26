@@ -620,7 +620,7 @@ valine:
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
-  avatar: mm # Gravatar style
+  avatar: "" # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: # Language, available values: en, zh-cn
@@ -734,8 +734,8 @@ busuanzi_count:
   total_visitors_icon: user
   total_views: true
   total_views_icon: eye
-  post_views: true
-  post_views_icon: eye
+  #post_views: true
+  #post_views_icon: eye
 
 
 # ---------------------------------------------------------------
@@ -1013,6 +1013,13 @@ vendors:
 css: css
 js: js
 images: images
+
+
+#! ---------------------------------------------------------------
+#! 
+#! Personal configration。
+#! 
+#! ---------------------------------------------------------------
 
 #文章末尾添加“本文结束”标记
 page_end_tag:
